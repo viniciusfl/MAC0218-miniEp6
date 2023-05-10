@@ -1,0 +1,4 @@
+
+sudo docker pull caddy 
+sudo docker image build . -t miniep6-caddy:1
+sudo docker container run --name miniep6 -p 1025:80 -v ./pages:/usr/src/pages -d miniep6-caddy:1
